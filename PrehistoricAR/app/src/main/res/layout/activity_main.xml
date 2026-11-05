@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <!-- Page loader (card with spinner) -->
+    <FrameLayout
+        android:id="@+id/loaderCard"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_gravity="center"
+        android:background="@drawable/loader_card_bg"
+        android:elevation="8dp"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:indeterminateTint="#00FF07" />
+    </FrameLayout>
+
+    <!-- "View source" button: opens the raw code of the current page -->
+    <TextView
+        android:id="@+id/viewSourceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:background="@drawable/source_button_bg"
+        android:elevation="6dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:minWidth="56dp"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:text="&lt;/&gt;"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+</FrameLayout>

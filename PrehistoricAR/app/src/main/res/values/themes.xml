@@ -1,0 +1,8 @@
+<resources>
+    <style name="Theme.PrehistoricAR" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#00FF07</item>
+        <item name="colorPrimaryDark">#00C805</item>
+        <item name="colorAccent">#00FF07</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+</resources>

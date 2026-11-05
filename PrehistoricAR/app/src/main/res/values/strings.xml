@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Prehistoric AR</string>
+    <string name="view_source">View source</string>
+    <string name="copy">Copy</string>
+    <string name="share">Share</string>
+    <string name="copied">Copied to clipboard</string>
+</resources>
